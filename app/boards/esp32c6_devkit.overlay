@@ -1,0 +1,12 @@
+/ {
+    aliases {
+        led-status = &status_led;
+    };
+    leds {
+        compatible = "gpio-keys";
+        status_led: led_0 {
+            gpios = <&gpio0 8 GPIO_ACTIVE_HIGH>;
+            label = "Status LED";
+        };
+    };
+};
